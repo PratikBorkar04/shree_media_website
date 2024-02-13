@@ -9,18 +9,17 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
-body {
-  font-family: "Open Sans", sans-serif;
-  color: #444444;
-}
-
+  body {
+    font-family: "Open Sans", sans-serif;
+    color: #444444;
+  }
 a {
   text-decoration: none;
-  color: #5cb874;
+  color: #252E57; /* updated */
 }
 
 a:hover {
-  color: #80c792;
+  color: #283158; /* updated */
   text-decoration: none;
 }
 
@@ -43,7 +42,7 @@ h6 {
   right: 15px;
   bottom: 15px;
   z-index: 996;
-  background: #FFD770;
+  background: #5cb874;
   width: 40px;
   height: 40px;
   border-radius: 4px;
@@ -52,29 +51,24 @@ h6 {
 
 .back-to-top i {
   font-size: 24px;
-  color: #000;
+  color: white; /* updated */
   line-height: 0;
-    &:hover {
-        color: #fff;
-    }
 }
 
 .back-to-top:hover {
-  background: #0A174E;
-  color: #FFD770;
+  background: #252E57; /* updated */
+  color: #F3F3F3; /* updated */
 }
 
 .back-to-top.active {
   visibility: visible;
   opacity: 1;
 }
-
 /*--------------------------------------------------------------
 # Top Bar
 --------------------------------------------------------------*/
 #topbar {
-/*  background: #fbfbfb;*/
-  background: #fff;
+  background: #F3F3F3;
   font-size: 15px;
   height: 40px;
   padding: 0;
@@ -82,34 +76,23 @@ h6 {
 
 #topbar .contact-info a {
   line-height: 0;
-/*  color: #444444;*/
   color: #000;
   transition: 0.3s;
 }
 
 #topbar .contact-info a:hover {
-/*  color: #5cb874;*/
   font-weight: 800;
   text-decoration: underline;
   transition: 0.3s;
 }
 
 #topbar .contact-info i {
-/*  color: #5cb874;*/
   color: #000;
   line-height: 0;
   margin-right: 5px;
 }
 
-#topbar .contact-info .phone-icon {
-  margin-left: 15px;
-}
-
-#topbar .contact-info {
-  color: #000;
-}
 #topbar .social-links a {
-/*  color: #6f6f6f;*/
   color: #000;
   padding: 4px 12px;
   display: inline-block;
@@ -118,7 +101,7 @@ h6 {
 }
 
 #topbar .social-links a:hover {
-  color: #5cb874;
+  color: #252E57;
 }
 
 /*--------------------------------------------------------------
@@ -126,8 +109,8 @@ h6 {
 --------------------------------------------------------------*/
 #header {
 /*  background: #fff;*/
-  background: #fff;
-  transition: all 0.5s;
+background: #F3F3F3;
+transition: all 0.5s;
   z-index: 997;
   height: 70px;
 }
@@ -148,7 +131,7 @@ h6 {
 
 #header .logo a {
 /*  color: #5cb874;*/
-    color: #000;
+color: #252E57;
 /*  color: rgba(108, 27, 203, 0.87);*/
 }
 
@@ -161,15 +144,21 @@ h6 {
 }
 
 #header .getstarted {
-  border-color: #000;
+  border-color: #252E57;
 }
+
 
 #header .getstarted:hover {
-    background: #195190;
-    transition: all 0.3s;
+  background: #283158;
+  transition: all 0.3s;
 }
 
-
+/*--------------------------------------------------------------
+# Navigation Menu
+--------------------------------------------------------------*/
+/**
+* Desktop Navigation 
+*/
 /*--------------------------------------------------------------
 # Navigation Menu
 --------------------------------------------------------------*/
@@ -199,10 +188,10 @@ h6 {
   justify-content: space-between;
   padding: 10px 0 10px 30px;
   font-size: 15px;
-/*  color: #222222;*/
-  color: #000;
+  color: #252E57; /* Updated color */
   white-space: nowrap;
   transition: 0.3s;
+  font-family: "Open Sans", sans-serif; /* Standardized font */
 }
 
 .navbar a i,
@@ -216,28 +205,28 @@ h6 {
 .navbar .active,
 .navbar .active:focus,
 .navbar li:hover>a {
-/*  color: #5cb874;*/
-  font-weight: 800;
-  text-decoration-style: solid;
-  text-decoration-line: underline;
+  color: #283158; /* Updated hover color */
+  font-weight: 600; /* Adjusted for professionalism */
+  text-decoration: underline; /* Simplified decoration */
 }
 
 .navbar .getstarted,
 .navbar .getstarted:focus {
-  color: #000;
-/*  color: #5cb874;*/
+  color: #252E57; /* Updated color */
   padding: 8px 25px;
   margin-left: 30px;
   border-radius: 4px;
-  border: 2px solid #F5D042;
+  border: 2px solid #F3F3F3; /* Updated border color */
   transition: 0.3s;
   font-size: 14px;
+  font-family: "Open Sans", sans-serif; /* Standardized font */
 }
 
 .navbar .getstarted:hover,
 .navbar .getstarted:focus:hover {
-  background: #5cb874;
+  background: #283158; /* Updated hover background color */
   color: #fff;
+  border-color: #283158; /* Ensuring border color matches */
 }
 
 .navbar .dropdown ul {
@@ -250,7 +239,7 @@ h6 {
   z-index: 99;
   opacity: 0;
   visibility: hidden;
-  background: #fff;
+  background: #F3F3F3; /* Updated background color */
   box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
   transition: 0.3s;
 }
@@ -262,6 +251,7 @@ h6 {
 .navbar .dropdown ul a {
   padding: 10px 20px;
   text-transform: none;
+  font-family: "Open Sans", sans-serif; /* Standardized font */
 }
 
 .navbar .dropdown ul a i {
@@ -271,7 +261,7 @@ h6 {
 .navbar .dropdown ul a:hover,
 .navbar .dropdown ul .active:hover,
 .navbar .dropdown ul li:hover>a {
-  color: #5cb874;
+  color: #283158; /* Updated hover color */
 }
 
 .navbar .dropdown:hover>ul {
@@ -370,7 +360,7 @@ h6 {
 .navbar-mobile a:hover,
 .navbar-mobile .active,
 .navbar-mobile li:hover>a {
-  color: #5cb874;
+  color: #283158;
 }
 
 .navbar-mobile .getstarted,
@@ -405,13 +395,14 @@ h6 {
 .navbar-mobile .dropdown ul a:hover,
 .navbar-mobile .dropdown ul .active:hover,
 .navbar-mobile .dropdown ul li:hover>a {
-  color: #5cb874;
+  color: #283158;
 }
 
 .navbar-mobile .dropdown>.dropdown-active {
   display: block;
 }
-
+/*--------------------------------------------------------------
+/*--------------------------------------------------------------
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
@@ -542,11 +533,11 @@ h6 {
   line-height: 1;
   color: #fff;
   animation-delay: 0.8s;
-  background: rgba(217, 184, 46, 0.63);
+  background: #283158;
 }
 
 #hero .btn-get-started:hover {
-  background: #e0c221;
+  background: #5cb874;
   font-weight: 700;
   font-size: 18px;
 }
@@ -581,15 +572,13 @@ h6 {
   }
 }
 
-/*--------------------------------------------------------------
-# Sections General
---------------------------------------------------------------*/
+/* Sections General */
 section {
   padding: 60px 0;
 }
 
 .section-bg {
-  background-color: #f8fcf9;
+  background-color: #F3F3F3; /* Light grey background for section background */
 }
 
 .section-title {
@@ -604,6 +593,7 @@ section {
   margin-bottom: 20px;
   padding-bottom: 20px;
   position: relative;
+  color: #252E57; /* Primary color for section titles */
 }
 
 .section-title h2::before {
@@ -612,7 +602,7 @@ section {
   display: block;
   width: 120px;
   height: 1px;
-  background: #ddd;
+  background: #ddd; /* Light grey line for a subtle pre-accent */
   bottom: 1px;
   left: calc(50% - 60px);
 }
@@ -623,7 +613,7 @@ section {
   display: block;
   width: 40px;
   height: 3px;
-  background: #5cb874;
+  background: #5cb874; /* Accent color for emphasis */
   bottom: 0;
   left: calc(50% - 20px);
 }
@@ -631,22 +621,27 @@ section {
 .section-title p {
   margin-bottom: 0;
   font-size: 14px;
-  color: #919191;
+  color: #555; /* Darker grey for contrast and readability */
 }
+
 
 /*--------------------------------------------------------------
 # Featured Services
 --------------------------------------------------------------*/
 .featured-services {
   padding: 20px 0;
+  background: #F3F3F3; /* Secondary background color */
 }
 
 .featured-services .icon-box {
   padding: 20px;
+  background: #fff; /* Light background for contrast */
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  transition: all 0.3s ease-in-out; /* Smooth transition for hover effects */
 }
 
 .featured-services .icon-box-bg {
-  background-image: linear-gradient(0deg, #222222 0%, #2f2f2f 50%, #222222 100%);
+  background-image: linear-gradient(0deg, #252E57 0%, #3a416f 50%, #252E57 100%); /* Gradient background using primary color */
 }
 
 .featured-services .icon {
@@ -654,7 +649,7 @@ section {
 }
 
 .featured-services .icon i {
-  color: #5cb874;
+  color: #5cb874; /* Accent color for icons */
   font-size: 42px;
 }
 
@@ -662,64 +657,99 @@ section {
   font-weight: 700;
   margin-bottom: 15px;
   font-size: 18px;
+  color: #252E57; /* Primary color for titles */
 }
 
 .featured-services .title a {
-  color: #222222;
+  color: #252E57; /* Ensuring link colors match the primary color */
   transition: 0.3s;
 }
 
-.featured-services .icon-box:hover .title a {
-  color: #5cb874;
+.featured-services .icon-box:hover {
+  background: #e7e9ec; /* Slightly lighter background on hover for a subtle effect */
+}
+
+.featured-services .icon-box:hover .title a,
+.featured-services .icon-box:hover .icon i {
+  color: #5cb874; /* Accent color for icon and title on hover */
 }
 
 .featured-services .description {
   line-height: 24px;
   font-size: 14px;
+  color: #555; /* Dark grey for readable contrast */
 }
+
 
 /*--------------------------------------------------------------
 # About Us
 --------------------------------------------------------------*/
+/* Main About Section Styles with Color Palette */
 .about .content h3 {
-  font-weight: 700;
+  font-weight: bold;
   font-size: 28px;
+  color: #252E57; /* Primary color for heading */
+  margin-bottom: 20px;
 }
 
 .about .content ul {
   list-style: none;
   padding: 0;
+  margin: 0;
 }
 
 .about .content ul li {
   padding-bottom: 10px;
+  display: flex;
+  align-items: center;
+  color: #283158; /* Tertiary color for list text */
 }
 
 .about .content ul i {
   font-size: 20px;
-  padding-right: 4px;
-  color: #5cb874;
+  padding-right: 10px;
+  color: #283158; /* Keeping the original icon color for contrast */
+  transition: color 0.3s ease;
 }
 
 .about .content p:last-child {
   margin-bottom: 0;
 }
 
+/* Get Started Button Styles with Color Adjustments */
 .about .getstarted,
 .about .getstarted:focus {
-  color: #5cb874;
-  padding: 8px 25px;
-  margin-left: 0px;
-  border-radius: 4px;
-  border: 2px solid #5cb874;
-  transition: 0.3s;
-  font-size: 14px;
+  color: #252E57; /* Primary color for button text */
+  background-color: #F3F3F3; /* Secondary color for button background */
+  padding: 10px 30px;
+  margin-top: 20px;
+  border-radius: 5px;
+  border: 2px solid #252E57; /* Primary color for border */
+  transition: all 0.3s ease;
+  font-size: 16px;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
 }
 
 .about .getstarted:hover,
 .about .getstarted:focus:hover {
-  background: #5cb874;
-  color: #fff;
+  background-color: #252E57; /* Primary color for button background on hover */
+  color: #F3F3F3; /* Secondary color for button text on hover */
+  text-decoration: none;
+}
+
+/* Additional Professional Touches with Color Adjustments */
+.about {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+  border-radius: 8px;
+  background-color: #F3F3F3; /* Secondary color for background */
+}
+
+.about .content {
+  line-height: 1.6;
+  color: #283158; /* Tertiary color for content text */
 }
 
 /*--------------------------------------------------------------
@@ -727,6 +757,7 @@ section {
 --------------------------------------------------------------*/
 .why-us {
   padding: 0;
+  background-color: #F3F3F3; /* Applying the secondary color for a cohesive background */
 }
 
 .why-us .row {
@@ -735,27 +766,29 @@ section {
 
 .why-us .content-item {
   padding: 40px;
-  border-left: 1px solid #eee;
-  border-bottom: 1px solid #eee;
+  border-left: 1px solid #eee; /* Consider changing this if you want a darker/lighter border */
+  border-bottom: 1px solid #eee; /* Same here for consistency */
   margin: -1px;
+  background-color: #fff; /* Ensures content items stand out against the secondary background */
 }
 
 .why-us .content-item span {
   display: block;
   font-size: 24px;
-  font-weight: 400;
-  color: #6ec083;
+  font-weight: 700; /* Making the font-weight bolder for emphasis */
+  color: #252E57; /* Using the primary color for these elements for consistency */
 }
 
 .why-us .content-item h4 {
   font-size: 26px;
-  font-weight: 300;
+  font-weight: 600; /* Slightly bolder than before for better hierarchy */
+  color: #283158; /* Tertiary color for headings for contrast and emphasis */
   padding: 0;
   margin: 20px 0;
 }
 
 .why-us .content-item p {
-  color: #aaaaaa;
+  color: #283158; /* Tertiary color for paragraph text, improving readability */
   font-size: 15px;
   margin: 0;
   padding: 0;
@@ -763,20 +796,19 @@ section {
 
 @media (max-width: 768px) {
   .why-us .content-item {
-    padding: 40px 0;
+    padding: 20px 15px; /* Adjusted padding for better spacing on smaller screens */
   }
 }
 
-/*--------------------------------------------------------------
-# Our Clients
+/* Our Clients
 --------------------------------------------------------------*/
 .clients .swiper-slide img {
-  opacity: 0.5;
-  transition: 0.3s;
+  opacity: 0.5; /* Slightly transparent logos to ensure focus */
+  transition: opacity 0.3s ease-in-out; /* Smooth transition for hover effect */
 }
 
 .clients .swiper-slide img:hover {
-  opacity: 1;
+  opacity: 1; /* Full opacity on hover to highlight the client logo */
 }
 
 .clients .swiper-pagination {
@@ -787,24 +819,44 @@ section {
 .clients .swiper-pagination .swiper-pagination-bullet {
   width: 12px;
   height: 12px;
-  background-color: #fff;
+  background-color: #fff; /* Keeps the bullets visible against a variety of backgrounds */
   opacity: 1;
-  border: 1px solid #5cb874;
+  border: 2px solid #252E57; /* Using the primary color for bullet borders for consistency */
 }
 
 .clients .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #5cb874;
+  background-color: #252E57; /* Primary color for the active bullet to stand out and maintain branding */
 }
+
+/* Additional Styling for Professional Touch */
+.clients {
+  background-color: #F3F3F3; /* Using the secondary color for background to ensure contrast and readability */
+  padding: 40px 0; /* Provides ample space around the client logos for a cleaner look */
+}
+
+.clients .swiper-wrapper {
+  align-items: center; /* Ensures logos are vertically centered within the slider */
+  justify-content: center; /* Centers the logos horizontally for a balanced appearance */
+}
+
+.clients .swiper-slide {
+  display: flex; /* Flex display to assist with centering and alignment */
+  justify-content: center; /* Central alignment of each client logo within its slide */
+  align-items: center; /* Vertical centering of the logo */
+  padding: 10px; /* Adds some space around each logo to prevent a cluttered look */
+}
+
 
 /*--------------------------------------------------------------
 # Services
 --------------------------------------------------------------*/
 .services .icon-box {
   text-align: center;
-  padding: 70px 20px 80px 20px;
-  transition: all ease-in-out 0.3s;
-  background: #fff;
-  box-shadow: 0px 5px 90px 0px rgba(110, 123, 131, 0.1);
+  padding: 70px 20px;
+  transition: all 0.3s ease-in-out;
+  background: #fff; /* Clean background */
+  box-shadow: 0 5px 30px rgba(36, 37, 38, 0.08); /* Subtle shadow for depth */
+  border: 1px solid #E6E6E6; /* Slight border for definition */
 }
 
 .services .icon-box .icon {
@@ -814,157 +866,109 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: ease-in-out 0.3s;
+  transition: transform 0.3s ease-in-out;
   position: relative;
+  background-color: #F3F3F3; /* Secondary color for icon background */
+  border-radius: 50%; /* Circular background for icons */
 }
 
 .services .icon-box .icon i {
   font-size: 36px;
-  transition: 0.5s;
-  position: relative;
-}
-
-.services .icon-box .icon svg {
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-.services .icon-box .icon svg path {
-  transition: 0.5s;
-  fill: #f5f5f5;
+  color: #252E57; /* Primary color for icons */
+  transition: color 0.3s ease-in-out;
 }
 
 .services .icon-box h4 {
-  font-weight: 600;
-  margin: 10px 0 15px 0;
-  font-size: 22px;
+  font-weight: 700; /* More boldness for headings */
+  margin: 20px 0 15px;
+  font-size: 24px; /* Slightly larger font size for headings */
+  color: #283158; /* Tertiary color for text */
 }
 
 .services .icon-box h4 a {
-  color: #222222;
-  transition: ease-in-out 0.3s;
+  color: #252E57; /* Primary color for links */
 }
 
 .services .icon-box p {
+  color: #666666; /* Soften text color for readability */
   line-height: 24px;
-  font-size: 14px;
-  margin-bottom: 0;
+  font-size: 15px; /* Slightly larger font size for body text */
 }
 
 .services .icon-box:hover {
-  border-color: #fff;
-  box-shadow: 0px 0 35px 0 rgba(0, 0, 0, 0.08);
+  border-color: #252E57; /* Primary color for hover border */
+  box-shadow: 0 10px 25px rgba(37, 46, 87, 0.15); /* Enhanced shadow on hover for depth */
+  transform: translateY(-5px); /* Slight raise effect on hover */
 }
 
-.services .iconbox-blue i {
-  color: #47aeff;
+/* Specific icon box color schemes updated to use primary and tertiary colors */
+.services .iconbox-blue .icon,
+.services .iconbox-orange .icon,
+.services .iconbox-pink .icon,
+.services .iconbox-yellow .icon,
+.services .iconbox-red .icon,
+.services .iconbox-teal .icon {
+  background-color: #283158; /* Tertiary color for all icons for consistency */
 }
 
-.services .iconbox-blue:hover .icon i {
-  color: #fff;
+.services .iconbox-blue:hover .icon,
+.services .iconbox-orange:hover .icon,
+.services .iconbox-pink:hover .icon,
+.services .iconbox-yellow:hover .icon,
+.services .iconbox-red:hover .icon,
+.services .iconbox-teal:hover .icon {
+  background-color: #252E57; /* Primary color on hover for a cohesive look */
 }
 
-.services .iconbox-blue:hover .icon path {
-  fill: #47aeff;
-}
-
-.services .iconbox-orange i {
-  color: #ffa76e;
-}
-
-.services .iconbox-orange:hover .icon i {
-  color: #fff;
-}
-
-.services .iconbox-orange:hover .icon path {
-  fill: #ffa76e;
-}
-
-.services .iconbox-pink i {
-  color: #e80368;
-}
-
-.services .iconbox-pink:hover .icon i {
-  color: #fff;
-}
-
-.services .iconbox-pink:hover .icon path {
-  fill: #e80368;
-}
-
-.services .iconbox-yellow i {
-  color: #ffbb2c;
-}
-
-.services .iconbox-yellow:hover .icon i {
-  color: #fff;
-}
-
-.services .iconbox-yellow:hover .icon path {
-  fill: #ffbb2c;
-}
-
-.services .iconbox-red i {
-  color: #ff5828;
-}
-
-.services .iconbox-red:hover .icon i {
-  color: #fff;
-}
-
-.services .iconbox-red:hover .icon path {
-  fill: #ff5828;
-}
-
-.services .iconbox-teal i {
-  color: #11dbcf;
-}
-
+.services .iconbox-blue:hover .icon i,
+.services .iconbox-orange:hover .icon i,
+.services .iconbox-pink:hover .icon i,
+.services .iconbox-yellow:hover .icon i,
+.services .iconbox-red:hover .icon i,
 .services .iconbox-teal:hover .icon i {
-  color: #fff;
-}
-
-.services .iconbox-teal:hover .icon path {
-  fill: #11dbcf;
+  color: #fff; /* White color for icons on hover for contrast */
 }
 
 /*--------------------------------------------------------------
-# Cta
---------------------------------------------------------------*/
+/* CTA Section Styling */
 .cta {
-  background: #5cb874;
+  background: #252E57; /* Utilizing the primary color for the background */
   padding: 80px 0;
+  color: #fff; /* Ensuring text is white for readability */
 }
 
 .cta h3 {
   color: #fff;
-  font-size: 28px;
+  font-size: 32px; /* Slightly larger for emphasis */
   font-weight: 700;
+  margin-bottom: 20px; /* Adding some spacing */
 }
 
 .cta p {
   color: #fff;
+  margin-bottom: 20px; /* Adding some spacing */
+  font-size: 18px; /* Slightly larger for readability */
 }
 
 .cta .cta-btn {
   font-family: "Raleway", sans-serif;
   font-weight: 600;
-  font-size: 14px;
+  font-size: 16px; /* Slightly larger for visibility */
   letter-spacing: 1px;
   display: inline-block;
-  padding: 10px 30px;
-  border-radius: 2px;
-  transition: 0.5s;
+  padding: 12px 35px; /* Slightly more padding for a larger button */
+  border-radius: 50px; /* More rounded corners for a modern look */
+  transition: all 0.3s ease;
   margin: 10px;
-  border: 2px solid #fff;
-  color: #fff;
-  border-radius: 4px;
+  border: 2px solid #fff; /* Keeping the border white */
+  color: #252E57; /* Using primary color for text */
+  background: #fff; /* Background white for contrast */
 }
 
 .cta .cta-btn:hover {
-  background: #fff;
-  color: #5cb874;
+  background: #283158; /* Tertiary color for hover background */
+  color: #fff; /* White text on hover */
+  border: 2px solid #283158; /* Tertiary color for border on hover */
 }
 
 @media (max-width: 1024px) {
@@ -981,228 +985,108 @@ section {
   }
 }
 
-/*--------------------------------------------------------------
-# Portfolio
---------------------------------------------------------------*/
-.portfolio .portfolio-item {
-  margin-bottom: 30px;
-}
-
-.portfolio #portfolio-flters {
-  padding: 0;
-  margin: 0 auto 20px auto;
-  list-style: none;
-  text-align: center;
-}
-
+/* Portfolio Filters */
 .portfolio #portfolio-flters li {
   cursor: pointer;
   display: inline-block;
-  padding: 8px 15px 10px 15px;
-  font-size: 14px;
+  padding: 10px 20px; /* Adjusted padding for better spacing */
+  font-size: 15px; /* Slightly larger for better readability */
   font-weight: 600;
   line-height: 1;
   text-transform: uppercase;
-  color: #444444;
+  color: #252E57; /* Using primary color for text */
   margin-bottom: 5px;
   transition: all 0.3s ease-in-out;
-  border-radius: 3px;
+  border-radius: 50px; /* More modern, rounded appearance */
+  border: 2px solid #252E57; /* Border to match text */
 }
 
 .portfolio #portfolio-flters li:hover,
 .portfolio #portfolio-flters li.filter-active {
   color: #fff;
-  background: #5cb874;
+  background: #283158; /* Using tertiary color for active/hover state */
+  border-color: #283158; /* Ensuring border matches the fill */
 }
 
-.portfolio #portfolio-flters li:last-child {
-  margin-right: 0;
-}
-
-.portfolio .portfolio-wrap {
-  transition: 0.3s;
-  position: relative;
-  overflow: hidden;
-  z-index: 1;
-  background: rgba(34, 34, 34, 0.6);
-}
-
+/* Portfolio Items */
 .portfolio .portfolio-wrap::before {
-  content: "";
-  background: rgba(34, 34, 34, 0.6);
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  transition: all ease-in-out 0.3s;
-  z-index: 2;
-  opacity: 0;
+  background: rgba(37, 46, 87, 0.7); /* Darkening effect with primary color */
 }
 
-.portfolio .portfolio-wrap img {
-  transition: all ease-in-out 0.3s;
-}
-
-.portfolio .portfolio-wrap .portfolio-info {
-  opacity: 0;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 3;
-  transition: all ease-in-out 0.3s;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: flex-start;
-  padding: 20px;
-}
-
-.portfolio .portfolio-wrap .portfolio-info h4 {
-  font-size: 20px;
-  color: #fff;
-  font-weight: 600;
-}
-
-.portfolio .portfolio-wrap .portfolio-info p {
-  color: rgba(255, 255, 255, 0.7);
-  font-size: 14px;
-  text-transform: uppercase;
-  padding: 0;
-  margin: 0;
-  font-style: italic;
-}
-
-.portfolio .portfolio-wrap .portfolio-links {
-  text-align: center;
-  z-index: 4;
-}
-
-.portfolio .portfolio-wrap .portfolio-links a {
-  color: #fff;
-  margin: 0 5px 0 0;
-  font-size: 28px;
-  display: inline-block;
-  transition: 0.3s;
+.portfolio .portfolio-wrap:hover img {
+  transform: scale(1.1); /* Less aggressive zoom */
 }
 
 .portfolio .portfolio-wrap .portfolio-links a:hover {
-  color: #6ec083;
+  color: #5cb874; /* Maintaining the original hover color as it fits well */
 }
 
+/* Adjusting the hover overlay opacity to be fully visible */
 .portfolio .portfolio-wrap:hover::before {
   opacity: 1;
 }
 
-.portfolio .portfolio-wrap:hover img {
-  transform: scale(1.2);
+.portfolio .portfolio-wrap .portfolio-info h4,
+.portfolio .portfolio-wrap .portfolio-info p {
+  color: #fff; /* Ensuring text is fully white for readability */
 }
 
-.portfolio .portfolio-wrap:hover .portfolio-info {
-  opacity: 1;
+/* Portfolio Details Adjustments */
+.portfolio-details .portfolio-info,
+.portfolio-details .portfolio-description {
+  background: #F3F3F3; /* Using secondary color for a light background */
+  color: #252E57; /* Primary color for text for contrast */
 }
 
-/*--------------------------------------------------------------
-# Portfolio Details
---------------------------------------------------------------*/
-.portfolio-details {
-  padding-top: 40px;
-}
-
-.portfolio-details .portfolio-details-slider img {
-  width: 100%;
-}
-
-.portfolio-details .portfolio-details-slider .swiper-pagination {
-  margin-top: 20px;
-  position: relative;
-}
-
-.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet {
-  width: 12px;
-  height: 12px;
-  background-color: #fff;
-  opacity: 1;
-  border: 1px solid #5cb874;
-}
-
-.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #5cb874;
-}
-
-.portfolio-details .portfolio-info {
-  padding: 30px;
-  box-shadow: 0px 0 30px rgba(34, 34, 34, 0.08);
-}
-
-.portfolio-details .portfolio-info h3 {
-  font-size: 22px;
-  font-weight: 700;
-  margin-bottom: 20px;
-  padding-bottom: 20px;
-  border-bottom: 1px solid #eee;
-}
-
-.portfolio-details .portfolio-info ul {
-  list-style: none;
-  padding: 0;
-  font-size: 15px;
+.portfolio-details .portfolio-info h3,
+.portfolio-details .portfolio-description h2 {
+  color: #252E57; /* Primary color for headers */
 }
 
 .portfolio-details .portfolio-info ul li+li {
-  margin-top: 10px;
+  margin-top: 15px; /* Slightly more spacing between items */
 }
 
-.portfolio-details .portfolio-description {
-  padding-top: 30px;
+.portfolio-details .portfolio-details-slider .swiper-pagination-bullet-active {
+  background-color: #283158; /* Tertiary color for active pagination bullet */
 }
 
-.portfolio-details .portfolio-description h2 {
-  font-size: 26px;
-  font-weight: 700;
-  margin-bottom: 20px;
+.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet {
+  border: 1px solid #283158; /* Tertiary color for pagination bullets */
 }
-
-.portfolio-details .portfolio-description p {
-  padding: 0;
-}
-
-/*--------------------------------------------------------------
-# Team
---------------------------------------------------------------*/
 .team .member {
   text-align: center;
   margin-bottom: 20px;
-  box-shadow: 0px 0px 12px 0px rgba(34, 34, 34, 0.07);
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.1); /* Slightly stronger shadow for depth */
   padding: 30px 20px;
-  background: #fff;
+  background: #F3F3F3; /* Lighter background for contrast */
 }
 
 .team .member img {
   max-width: 60%;
   border-radius: 50%;
-  margin: 0 0 30px 0;
+  margin: 0 0 25px 0; /* Adjusted margin for alignment */
 }
 
 .team .member h4 {
   font-weight: 700;
-  margin-bottom: 2px;
-  font-size: 18px;
+  margin-bottom: 5px; /* Slightly more space below the name */
+  font-size: 20px; /* Larger for emphasis */
+  color: #252E57; /* Primary color for names */
 }
 
 .team .member span {
   font-style: italic;
   display: block;
-  font-size: 13px;
+  font-size: 14px; /* Slightly larger for better readability */
+  color: #283158; /* Tertiary color for position titles */
 }
 
 .team .member p {
   padding-top: 10px;
   font-size: 14px;
   font-style: italic;
-  color: #aaaaaa;
+  color: #666666; /* Darker for better readability */
 }
 
 .team .member .social {
@@ -1210,17 +1094,17 @@ section {
 }
 
 .team .member .social a {
-  color: #919191;
+  color: #919191; /* Slightly darker for better contrast */
   transition: 0.3s;
 }
 
 .team .member .social a:hover {
-  color: #5cb874;
+  color: #5cb874; /* Maintaining this color for consistency with interactive elements */
 }
 
 .team .member .social i {
-  font-size: 18px;
-  margin: 0 2px;
+  font-size: 20px; /* Larger icons for easier interaction */
+  margin: 0 5px; /* More space around icons for better accessibility */
 }
 
 /*--------------------------------------------------------------
