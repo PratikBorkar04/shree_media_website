@@ -286,26 +286,48 @@
           <h2>Services</h2>
           <p>We provide following services.</p>
         </div>
+        <!-- Include Bootstrap CSS -->
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Include jQuery and Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
         <div class="row">
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
-            <div class="icon-box iconbox-blue">
-              <div class="icon">
-<!--
-                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
-                  <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,521.0016835830174C376.1290562159157,517.8887921683347,466.0731472004068,529.7835943286574,510.70327084640275,468.03025145048787C554.3714126377745,407.6079735673963,508.03601936045806,328.9844924480964,491.2728898941984,256.3432110539036C474.5976632858925,184.082847569629,479.9380746630129,96.60480741107993,416.23090153303,58.64404602377083C348.86323505073057,18.502131276798302,261.93793281208167,40.57373210992963,193.5410806939664,78.93577620505333C130.42746243093433,114.334589627462,98.30271207620316,179.96522072025542,76.75703585869454,249.04625023123273C51.97151888228291,328.5150500222984,13.704378332031375,421.85034740162234,66.52175969318436,486.19268352777647C119.04800174914682,550.1803526380478,217.28368757567262,524.383925680826,300,521.0016835830174"></path>
-                </svg>
-                <i class="bx bxl-dribbble"></i>
--->
-              <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="#f5f5f5" class="bi bi-file-earmark-person" viewBox="0 0 16 16">
-                  <path d="M11 8a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
-                  <path d="M14 14V4.5L9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2zM9.5 3A1.5 1.5 0 0 0 11 4.5h2v9.255S12 12 8 12s-5 1.755-5 1.755V2a1 1 0 0 1 1-1h5.5v2z"/>
-              </svg>
-                </div>
-              <h4><a href="">Random Survey</a></h4>
-              <p>We cover major areas in your constituency and take the pulse of voters. The major areas like taluka panchayat, nagarpanchayat or wards are covered in this survey</p>
-            </div>
+              <div class="icon-box iconbox-blue">
+                  <div class="icon">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="#f5f5f5" class="bi bi-file-earmark-person" viewBox="0 0 16 16" >
+                          <path d="M11 8a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                          <path d="M14 14V4.5L9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2zM9.5 3A1.5 1.5 0 0 0 11 4.5h2v9.255S12 12 8 12s-5 1.755-5 1.755V2a1 1 0 0 1 1-1h5.5v2z"/>
+                      </svg>
+                  </div>
+                  <h4><a href="#" data-toggle="modal" data-target="#randomSurveyModal">Random Survey</a></h4>
+                  <p>We cover major areas in your constituency and take the pulse of voters. The major areas like taluka panchayat, nagarpanchayat or wards are covered in this survey</p>
+              </div>
           </div>
+          <!-- More services can be added here -->
+          <div class="modal fade" id="randomSurveyModal" tabindex="-1" aria-labelledby="randomSurveyModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="randomSurveyModalLabel">Random Survey</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="assets/img/random_survey.png" alt="Random Survey" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Include jQuery and Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script>
+            // Additional JavaScript can go here
+        </script>
 
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
             <div class="icon-box iconbox-orange ">
@@ -603,7 +625,7 @@
 
         <div class="container">
           <div class="section-title">
-            <h2>CEO</h2>
+            <h2>Managing Director</h2>
             <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
           </div>
       
@@ -612,7 +634,7 @@
               <div class="member">
                 <img src="assets/img/team/team-1.jpg" alt="">
                 <h4>Sunil Deshpande</h4>
-                <span>Director</span>
+                <span>Managing Director</span>
                 <p>
                   Magni qui quod omnis unde et eos fuga et exercitationem. Odio veritatis perspiciatis quaerat qui aut aut aut
                 </p>
